@@ -1,5 +1,5 @@
 {
-    "name": "SDMN Checker Bot",
+    "name": "GRAB & MAKE IT Checker Bot",
     "description": "A Telegram CC Checker Bot with hella lotta features.",
     "logo": "https://pbs.twimg.com/profile_images/1252291883793027074/RfEhm8yV_400x400.jpg",
     "keywords": [
@@ -7,8 +7,8 @@
         "Bot",
         "Modular"
     ],
-    "website": "https://telegram.me/SDMN_CheckerBot",
-    "repository": "https://github.com/iam-NVN/SDMN_CheckerBot",
+    "website": "https://t.me/Grabchecker_bot",
+    "repository": "https://github.com/MakeItgrab/grr",
     "env": {
         "BOT_TOKEN": {
             "description": "Enter your Bot Token Here. Get it from @Botfather",
