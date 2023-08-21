@@ -9,7 +9,7 @@
 | It can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['botToken'] = $_ENV['BOT_TOKEN'];
+$config['botToken'] = "5667169456:AAESKAk4Eru_AER2fie_6L5X2wTRjni_Ddo";
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,7 @@ $config['botToken'] = $_ENV['BOT_TOKEN'];
 | ID can be obtained from https://telegram.dog/username_to_id_bot
 |
 */
-$config['adminID'] = $_ENV['ADMIN_ID'];
+$config['adminID'] = "2098559788" "1999154137";
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ $config['adminID'] = $_ENV['ADMIN_ID'];
 | ID can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['logsID'] =  $_ENV['LOGS_DUMP_ID'];
+$config['logsID'] =  "1001608248827";
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ $config['logsID'] =  $_ENV['LOGS_DUMP_ID'];
 | By Default it's in IST
 |
 */
-$config['timeZone'] =  $_ENV['TIMEZONE'];
+$config['timeZone'] =  "Asia/Kolkata";
 
 /*
 |--------------------------------------------------------------------------
@@ -52,10 +52,10 @@ $config['timeZone'] =  $_ENV['TIMEZONE'];
 | Database to Store User Data
 |
 */
-$config['db']['hostname'] =  $_ENV['DB_HOST'];
-$config['db']['username'] =  $_ENV['DB_USERNAME'];
-$config['db']['password'] =  $_ENV['DB_PASSWORD'];
-$config['db']['database'] =  $_ENV['DB_NAME'];
+$config['db']['hostname'] =  "sql6.freesqldatabase.com";
+$config['db']['username'] =  "sql6641157";
+$config['db']['password'] =  "4KVKCiLrNK";
+$config['db']['database'] =  "sql6641157";
 
 /*
 |--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ $config['db']['database'] =  $_ENV['DB_NAME'];
 | Value is in Seconds. "20" = 20seconds
 |
 */
-$config['anti_spam_timer'] =  $_ENV['ANTISPAM_TIMER'];
+$config['anti_spam_timer'] =  "20";
 
 /*
 |--------------------------------------------------------------------------
@@ -78,5 +78,20 @@ $config['anti_spam_timer'] =  $_ENV['ANTISPAM_TIMER'];
 | array('sk1','sk2','sk3')
 |
 */
-$config['sk_keys'] =  explode(",", $_ENV['SK_KEYS']);
+$config['sk_keys'] =  array('sk_live_69GKI0saLB8uIEnxzv8VTvRX');
+
+
+$webhookUrl = "https://tudominio.com/main.php"; // Cambia esto a tu URL de webhook
+$webhookUrl .= "?token=" . $botToken; // Agrega el token del bot como parámetro
+
+$apiUrl = "https://api.telegram.org/bot" . $botToken . "/setWebhook?url=" . $webhookUrl;
+
+$response = file_get_contents($apiUrl);
+
+if ($response === false) {
+    echo "Error al configurar el webhook";
+} else {
+    echo "Webhook configurado correctamente";
+}
+
 ?>
