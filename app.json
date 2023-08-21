@@ -12,37 +12,37 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Enter your Bot Token Here. Get it from @Botfather",
-            "value": "",
+            "value": "5667169456:AAESKAk4Eru_AER2fie_6L5X2wTRjni_Ddo",
             "required": true
         },
         "ADMIN_ID": {
             "description": "Enter the User ID of Admin.",
-            "value": "",
+            "value": "2098559788",
             "required": true
         },
         "LOGS_DUMP_ID": {
             "description": "Enter the ID of a Group/Channel to store Logs",
-            "value": "",
+            "value": "-1001608248827",
             "required": true
         },
         "DB_HOST": {
             "description": "Database URL",
-            "value": "",
+            "value": "sql6.freesqldatabase.com",
             "required": true
         },
         "DB_USERNAME": {
             "description": "Database Username",
-            "value": "",
+            "value": "sql6641157",
             "required": true
         },
         "DB_PASSWORD": {
             "description": "Database Password",
-            "value": "",
+            "value": "4KVKCiLrNK",
             "required": true
         },
         "DB_NAME": {
             "description": "Database Name",
-            "value": "",
+            "value": "sql6641157",
             "required": true
         },
         "ANTISPAM_TIMER": {
